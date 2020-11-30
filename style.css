@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.column {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./tools.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.buttons {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* border-bottom: 1px solid #999;
+  border-left: 1px solid #999; */
+}
+#display {
+  width: 100%;
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+  width: 100%;
+  padding: 16px 8px;
+  font-size: 25px;
+  border-bottom: 1px solid #f9dca5;
+  color: #f9dca5;
+}
+.buttons > div {
+  line-height: 100px;
+  /* border: 0.5px solid #f9dca5; */
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: #f9dca5;
+}
+#equal {
+  background-color: rgba(249, 220, 165, 0.2);
+  color: white;
+}
+.button:hover {
+  background-color: rgba(249, 220, 165, 0.3);
+  color: black;
+  transition: 0.3s ease-in-out;
+}
